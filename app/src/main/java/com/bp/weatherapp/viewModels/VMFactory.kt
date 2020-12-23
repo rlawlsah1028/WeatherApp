@@ -1,9 +1,8 @@
-package com.navertest.sampleMap.viewModels
+package com.bp.weatherapp.viewModels
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.bp.weatherapp.repositories.WeatherRepository
-import com.bp.weatherapp.viewModels.WeatherViewModel
 import java.lang.IllegalArgumentException
 
 class VMFactory(private val weatherRepository: WeatherRepository) : ViewModelProvider.Factory {

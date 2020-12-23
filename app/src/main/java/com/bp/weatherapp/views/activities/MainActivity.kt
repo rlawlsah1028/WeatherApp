@@ -2,22 +2,16 @@ package com.bp.weatherapp.views.activities
 
 import android.os.Bundle
 import android.util.Log
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import androidx.recyclerview.widget.DividerItemDecoration
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.bp.weatherapp.R
 import com.bp.weatherapp.databinding.ActivityMainBinding
 import com.bp.weatherapp.repositories.WeatherRepository
 import com.bp.weatherapp.viewModels.WeatherViewModel
 import com.bp.weatherapp.views.adapter.WeatherListAdapter
 import com.bumptech.glide.Glide
-import com.navertest.sampleMap.viewModels.VMFactory
+import com.bp.weatherapp.viewModels.VMFactory
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
 import io.reactivex.rxjava3.disposables.CompositeDisposable
-import io.reactivex.rxjava3.functions.Action
-import io.reactivex.rxjava3.functions.Consumer
 
 class MainActivity : BaseActivity() {
 
